@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elves Treasure Hunt Experiment</title>
+    <!-- jsPsych Core -->
+    <script src="jspsych/dist/jspsych.js"></script>
+    <link href="jspsych/dist/jspsych.css" rel="stylesheet" type="text/css" />
+    
+    <!-- jsPsych Plugins -->
+    <script src="jspsych/dist/plugin-html-keyboard-response.js"></script>
+    <script src="jspsych/dist/plugin-html-button-response.js"></script>
+    <script src="jspsych/dist/plugin-survey-html-form.js"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-html-form@1.0.3"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-survey-html-form@1.0.3"></script>
+    <script src="jspsych/dist/plugin-preload.js"></script>
+    <script src="jspsych/dist/plugin-call-function.js"></script>
+    <!-- jsPsychPipe plugin for DataPipe/OSF integration -->
+    <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe"></script>
+    
+    <!-- Custom CSS -->
+    <link href="css/experiment.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Configuration and scripts loaded in sequence -->
+    <script>
+      // Load config.js first, then chain the rest
+      const configScript = document.createElement('script');
+      configScript.src = 'js/config.js';
+      configScript.onload = function() {
+        // Load compass.js
+        const compassScript = document.createElement('script');
+        compassScript.src = 'js/compass.js';
+        compassScript.onload = function() {
+          // Load trial orders based on config ratios
+          const trialOrdersScript = document.createElement('script');
+          trialOrdersScript.src = EXPERIMENT_CONFIG.TRAINING_TRIALS_PATH;
+          trialOrdersScript.onload = function() {
+            // Load experiment.js after trial orders are loaded
+            const experimentScript = document.createElement('script');
+            experimentScript.src = 'js/experiment.js';
+            document.body.appendChild(experimentScript);
+          };
+          document.head.appendChild(trialOrdersScript);
+        };
+        document.head.appendChild(compassScript);
+      };
+      document.head.appendChild(configScript);
+    </script>
+  </head>
+  <body></body>
+</html>
