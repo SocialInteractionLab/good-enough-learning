@@ -94,8 +94,8 @@ const introduction_trial = {
     stimulus: `
       <div class="instruction-text">
         <h2>Welcome to the Elves Treasure Hunt Experiment</h2>
-        <p>Thank you for your participation. In order to complete today's task, you're going to play a game. You've been asked to be a guide for a squad of Elves looking to find buried treasure. Their compass navigator has gone missing and there's not much time before winter makes the hunt impossible. In exchange for your navigating, they'll give you a cut of their prize.</p>
-        <p>Here's the situation. The worker elves only know Elvish. It's your job to learn to read the compass as quickly and accurately as possible, and use what you know to guide the Elves to treasure. First you'll learn how to give directions. Just as soon as you pass basic navigating it's off to hunt for treasure. Good luck!</p>
+        <p>Thank you for your participation. In order to complete today's task, you're going to play a game. You've been asked to be a guide for a squad of Elves looking to find buried treasure. Their compass navigator has gone missing and there's not much time before winter makes the hunt impossible.</p>
+        <p>Here's the situation. The worker elves only know Elvish. It's your job to learn to read the compass as quickly and accurately as possible. First you'll learn how to give directions. Good luck!</p>
         <p class="prompt-text">Press any key to continue</p>
       </div>
     `,
@@ -114,7 +114,7 @@ const exposure_instructions_trial = {
     stimulus: `
       <div class="instruction-text">
         <h2>Practicing Elvish Directions</h2>
-        <p>The Elves use 8 principal directions to navigate. You will use those directions to help them find the treasure. You're about to see the names for each direction, and practice giving directions by typing in the name of the direction.</p>
+        <p>The Elves use 8 principal directions to navigate. You're about to see the names for each direction, and practice giving directions by typing in the name of the direction.</p>
         <p class="prompt-text">Press any key to begin</p>
       </div>
     `,
