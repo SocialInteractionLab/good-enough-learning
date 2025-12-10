@@ -238,7 +238,7 @@ const familiarization_instructions_trial = {
   stimulus: `
     <div class="instruction-text">
       <h2>Learning Elvish Directions</h2>
-      <p>Let's start learning to read the compass. You will see a direction and two potential words for that direction. Type the word that you think is correct. We'll keep practicing until you've learned all the directions.'</p>
+      <p>Let's start learning to read the compass. You will see a direction and two potential words for that direction. Type the word that you think is correct. We'll keep practicing until you've learned all the directions. A buzz will play if you got the trial incorrect.</p>
       <p class="prompt-text">Press any key to begin</p>
     </div>
   `,
