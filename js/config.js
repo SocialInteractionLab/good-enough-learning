@@ -6,8 +6,8 @@ const LF_RATIO = 1;
 
 const EXPERIMENT_CONFIG = {
   // Prolific completion codes
-  PROLIFIC_COMPLETION_CODE_PARTIAL: 'PLACEHOLDER_PARTIAL', // For participants who end after 5 loops
-  PROLIFIC_COMPLETION_CODE_FULL: 'PLACEHOLDER_FULL', // For participants who complete 10 loops
+  PROLIFIC_COMPLETION_CODE_PARTIAL: 'CPWND8YD', // For participants who end after 5 loops
+  PROLIFIC_COMPLETION_CODE_FULL: 'C1G4BSWV', // For participants who complete 10 loops
   
   // 5. Set the experiment ID below:
   DATAPIPE_EXPERIMENT_ID: "Y81x5a0mlAt7",

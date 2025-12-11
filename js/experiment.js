@@ -358,11 +358,11 @@ const offramp_trial = {
   stimulus: `
     <div class="instruction-text">
       <h2>Training Progress Update</h2>
-      <p>You've completed ${EXPERIMENT_CONFIG.OFFRAMP_LOOP} training loops. Great work!</p>
+      <p>Great work so far! Take a moment to rest your eyes and hands.</p>
       <p>You now have a choice:</p>
       <ul style="text-align: left; max-width: 600px; margin: 20px auto;">
         <li style="margin: 15px 0;"><strong>End now:</strong> You can choose to end the experiment here and receive partial payment. You'll do one more recall test to see how well you've learned, then complete a brief survey and receive your completion code.</li>
-        <li style="margin: 15px 0;"><strong>Continue:</strong> You can continue practicing until you've learned all the words to receive the full payment. You'll still have the option to end early if needed.</li>
+        <li style="margin: 15px 0;"><strong>Continue:</strong> You can continue practicing until you've learned all the words or your time is up to receive the full payment.</li>
       </ul>
       <p>What would you like to do?</p>
     </div>
